@@ -1,0 +1,50 @@
+button.btn {
+    padding: 20px 55px;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+}
+button.btn::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background: red;
+    position: absolute;
+    border-radius: 5px;
+    transition: .7s;
+    z-index: -1;
+
+}
+button.btn:hover::before{
+    width: 100%;
+}
+a.cool {
+    background: linear-gradient(45deg, #562a2a, transparent);
+    color:goldenrod,red,green;
+    border:e
+    display: inline-block;
+    padding: 14px 28px;
+    position: relative;
+    z-index: 3;
+    font-size: 40px;
+}
+a.cool::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition: .9s;
+    z-index: -1;
+   background: linear-gradient(red,green,blue,pink)
+}
+a.cool:hover::after{
+    width: 100%;
+}
+.before {
+    text-align: center;
+}
